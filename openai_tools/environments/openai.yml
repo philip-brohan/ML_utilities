@@ -1,0 +1,21 @@
+name: openai
+channels:
+  - conda-forge
+dependencies:
+# Basics
+  - python=3.11
+  - openai=0.27
+# Optional, code formatter
+  - black
+# Optional - documentation generator
+  - sphinx=7.1
+# Optional - needed only for monitoring jobs on Isambard
+  - tmux
+
+# Tell python to look for modules in the root directory of the project
+# (A hack, needs to be edited for every installation, but makes code
+#  management much easier.)
+# Replace with the path to your project directory root.
+
+variables:
+  PYTHONPATH: /net/home/h03/hadpb/Projects/ML_utilities
