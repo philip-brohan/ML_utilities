@@ -5,6 +5,7 @@ dependencies:
 # Basics
   - python=3.11
   - openai=0.27
+  - tiktoken=0.4
 # Optional, code formatter
   - black
 # Optional - documentation generator
